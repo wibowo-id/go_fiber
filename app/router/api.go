@@ -1,23 +1,23 @@
 package router
 
 import (
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/module/article"
-	"dlh_oss_be/app/module/auth"
-	"dlh_oss_be/app/module/options"
-	"dlh_oss_be/app/module/permission"
-	"dlh_oss_be/app/module/role"
-	"dlh_oss_be/app/module/role_permission"
-	"dlh_oss_be/app/module/user"
-	"dlh_oss_be/app/module/version"
-	versionController "dlh_oss_be/app/module/version/controller"
-	"dlh_oss_be/app/module/wa_sender"
-	"dlh_oss_be/app/module/web_page"
-	"dlh_oss_be/utils/config"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/swagger"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/module/article"
+	"go_fiber_wibowo/app/module/auth"
+	"go_fiber_wibowo/app/module/options"
+	"go_fiber_wibowo/app/module/permission"
+	"go_fiber_wibowo/app/module/role"
+	"go_fiber_wibowo/app/module/role_permission"
+	"go_fiber_wibowo/app/module/user"
+	"go_fiber_wibowo/app/module/version"
+	versionController "go_fiber_wibowo/app/module/version/controller"
+	"go_fiber_wibowo/app/module/wa_sender"
+	"go_fiber_wibowo/app/module/web_page"
+	"go_fiber_wibowo/utils/config"
 )
 
 type Router struct {

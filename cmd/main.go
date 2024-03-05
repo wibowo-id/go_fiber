@@ -1,25 +1,25 @@
 package main
 
 import (
-	"dlh_oss_be/app/module/article"
-	"dlh_oss_be/app/module/auth"
-	"dlh_oss_be/app/module/options"
-	"dlh_oss_be/app/module/permission"
-	"dlh_oss_be/app/module/role"
-	"dlh_oss_be/app/module/role_permission"
-	"dlh_oss_be/app/module/user"
-	"dlh_oss_be/app/module/version"
-	"dlh_oss_be/app/module/wa_sender"
-	"dlh_oss_be/app/module/web_page"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/article"
+	"go_fiber_wibowo/app/module/auth"
+	"go_fiber_wibowo/app/module/options"
+	"go_fiber_wibowo/app/module/permission"
+	"go_fiber_wibowo/app/module/role"
+	"go_fiber_wibowo/app/module/role_permission"
+	"go_fiber_wibowo/app/module/user"
+	"go_fiber_wibowo/app/module/version"
+	"go_fiber_wibowo/app/module/wa_sender"
+	"go_fiber_wibowo/app/module/web_page"
 
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/router"
-	"dlh_oss_be/internal/bootstrap"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/config"
 	fxzerolog "github.com/efectn/fx-zerolog"
 	_ "go.uber.org/automaxprocs"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/router"
+	"go_fiber_wibowo/internal/bootstrap"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/config"
 )
 
 // @title                       Go Fiber Starter API Documentation

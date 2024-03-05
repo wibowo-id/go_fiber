@@ -1,11 +1,11 @@
 package user
 
 import (
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/module/user/controller"
-	"dlh_oss_be/app/module/user/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/module/user/controller"
+	"go_fiber_wibowo/app/module/user/service"
 )
 
 // struct of UserRouter

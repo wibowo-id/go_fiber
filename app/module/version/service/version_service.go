@@ -1,11 +1,11 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/version/repository"
-	"dlh_oss_be/app/module/version/request"
-	"dlh_oss_be/app/module/version/response"
-	"dlh_oss_be/utils/paginator"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/version/repository"
+	"go_fiber_wibowo/app/module/version/request"
+	"go_fiber_wibowo/app/module/version/response"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 // VersionService

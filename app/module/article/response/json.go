@@ -3,7 +3,7 @@ package response
 import (
 	"time"
 
-	"dlh_oss_be/app/database/schema"
+	"go_fiber_wibowo/app/database/schema"
 )
 
 type Article struct {

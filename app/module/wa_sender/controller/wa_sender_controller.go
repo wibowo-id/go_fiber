@@ -1,11 +1,11 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/wa_sender/request"
-	wa_request "dlh_oss_be/app/module/wa_sender/response"
-	"dlh_oss_be/app/module/wa_sender/service"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
+	"go_fiber_wibowo/app/module/wa_sender/request"
+	wa_request "go_fiber_wibowo/app/module/wa_sender/response"
+	"go_fiber_wibowo/app/module/wa_sender/service"
+	"go_fiber_wibowo/utils/response"
 )
 
 type waSenderController struct {

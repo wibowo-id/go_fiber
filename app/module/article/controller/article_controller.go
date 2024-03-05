@@ -3,11 +3,11 @@ package controller
 import (
 	"strconv"
 
-	"dlh_oss_be/app/module/article/request"
-	"dlh_oss_be/app/module/article/service"
-	"dlh_oss_be/utils/paginator"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
+	"go_fiber_wibowo/app/module/article/request"
+	"go_fiber_wibowo/app/module/article/service"
+	"go_fiber_wibowo/utils/paginator"
+	"go_fiber_wibowo/utils/response"
 )
 
 type articleController struct {

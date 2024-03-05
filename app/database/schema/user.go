@@ -1,9 +1,9 @@
 package schema
 
 import (
-	"dlh_oss_be/utils/helpers"
 	"errors"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/utils/helpers"
 	"golang.org/x/crypto/bcrypt"
 )
 

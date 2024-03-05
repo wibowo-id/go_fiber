@@ -1,10 +1,10 @@
 package repository
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/article/request"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/paginator"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/article/request"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 type articleRepository struct {

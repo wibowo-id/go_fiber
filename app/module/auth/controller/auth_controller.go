@@ -1,19 +1,19 @@
 package controller
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/auth/request"
-	"dlh_oss_be/app/module/auth/service"
-	role_permission_service "dlh_oss_be/app/module/role_permission/service"
-	user_repo "dlh_oss_be/app/module/user/repository"
-	wa_request "dlh_oss_be/app/module/wa_sender/request"
-	wa_service "dlh_oss_be/app/module/wa_sender/service"
-	"dlh_oss_be/utils/helpers"
-	"dlh_oss_be/utils/response"
-	"dlh_oss_be/utils/token"
 	"errors"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/auth/request"
+	"go_fiber_wibowo/app/module/auth/service"
+	role_permission_service "go_fiber_wibowo/app/module/role_permission/service"
+	user_repo "go_fiber_wibowo/app/module/user/repository"
+	wa_request "go_fiber_wibowo/app/module/wa_sender/request"
+	wa_service "go_fiber_wibowo/app/module/wa_sender/service"
+	"go_fiber_wibowo/utils/helpers"
+	"go_fiber_wibowo/utils/response"
+	"go_fiber_wibowo/utils/token"
 )
 
 type authController struct {

@@ -1,9 +1,9 @@
 package request
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/utils/helpers"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/utils/helpers"
 	"time"
 )
 

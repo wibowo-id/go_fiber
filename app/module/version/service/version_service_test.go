@@ -5,12 +5,12 @@ import (
 	"github.com/google/uuid"
 	"testing"
 
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/version/repository"
-	"dlh_oss_be/app/module/version/request"
-	"dlh_oss_be/utils/paginator"
 	gomock "github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/version/repository"
+	"go_fiber_wibowo/app/module/version/request"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 func TestNewVersionService(t *testing.T) {

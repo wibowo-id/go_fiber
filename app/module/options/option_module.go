@@ -1,11 +1,11 @@
 package options
 
 import (
-	"dlh_oss_be/app/module/options/controller"
-	"dlh_oss_be/app/module/options/repository"
-	"dlh_oss_be/app/module/options/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/options/controller"
+	"go_fiber_wibowo/app/module/options/repository"
+	"go_fiber_wibowo/app/module/options/service"
 )
 
 // struct of OptionRouter

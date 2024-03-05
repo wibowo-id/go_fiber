@@ -1,15 +1,15 @@
 package service
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/auth/request"
-	"dlh_oss_be/app/module/auth/response"
-	user_repo "dlh_oss_be/app/module/user/repository"
-	"dlh_oss_be/utils/helpers"
-	"dlh_oss_be/utils/otp"
-	"dlh_oss_be/utils/token"
 	"errors"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/auth/request"
+	"go_fiber_wibowo/app/module/auth/response"
+	user_repo "go_fiber_wibowo/app/module/user/repository"
+	"go_fiber_wibowo/utils/helpers"
+	"go_fiber_wibowo/utils/otp"
+	"go_fiber_wibowo/utils/token"
 	"golang.org/x/crypto/bcrypt"
 	"time"
 )

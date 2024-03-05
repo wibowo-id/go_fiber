@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/wa_sender/service"
+	"go_fiber_wibowo/app/module/wa_sender/service"
 )
 
 type Controller struct {

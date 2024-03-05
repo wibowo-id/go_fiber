@@ -1,14 +1,14 @@
 package service
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/permission/repository"
-	"dlh_oss_be/app/module/permission/request"
-	"dlh_oss_be/app/module/permission/response"
-	globalRequest "dlh_oss_be/app/request"
-	"dlh_oss_be/utils/paginator"
 	"errors"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/permission/repository"
+	"go_fiber_wibowo/app/module/permission/request"
+	"go_fiber_wibowo/app/module/permission/response"
+	globalRequest "go_fiber_wibowo/app/request"
+	"go_fiber_wibowo/utils/paginator"
 	"time"
 )
 

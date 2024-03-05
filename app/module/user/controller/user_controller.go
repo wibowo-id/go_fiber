@@ -1,15 +1,15 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/user/request"
-	"dlh_oss_be/app/module/user/service"
-	globalRequest "dlh_oss_be/app/request"
-	"dlh_oss_be/utils/helpers"
-	"dlh_oss_be/utils/paginator"
-	"dlh_oss_be/utils/response"
-	"dlh_oss_be/utils/token"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/user/request"
+	"go_fiber_wibowo/app/module/user/service"
+	globalRequest "go_fiber_wibowo/app/request"
+	"go_fiber_wibowo/utils/helpers"
+	"go_fiber_wibowo/utils/paginator"
+	"go_fiber_wibowo/utils/response"
+	"go_fiber_wibowo/utils/token"
 	"time"
 )
 

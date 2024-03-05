@@ -1,11 +1,11 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/wa_sender/repository"
-	"dlh_oss_be/app/module/wa_sender/request"
-	"dlh_oss_be/app/module/wa_sender/response"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/helpers"
+	"go_fiber_wibowo/app/module/wa_sender/repository"
+	"go_fiber_wibowo/app/module/wa_sender/request"
+	"go_fiber_wibowo/app/module/wa_sender/response"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/helpers"
 )
 
 type waSenderService struct {

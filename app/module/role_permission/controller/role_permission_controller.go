@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/role_permission/service"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
+	"go_fiber_wibowo/app/module/role_permission/service"
+	"go_fiber_wibowo/utils/response"
 )
 
 type rolePermissionController struct {

@@ -1,12 +1,12 @@
 package role_permission
 
 import (
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/module/role_permission/controller"
-	"dlh_oss_be/app/module/role_permission/repository"
-	"dlh_oss_be/app/module/role_permission/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/module/role_permission/controller"
+	"go_fiber_wibowo/app/module/role_permission/repository"
+	"go_fiber_wibowo/app/module/role_permission/service"
 )
 
 // struct of RolePermissionRouter

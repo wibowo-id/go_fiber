@@ -1,8 +1,8 @@
 package mail
 
 import (
-	"dlh_oss_be/utils/config"
 	"fmt"
+	"go_fiber_wibowo/utils/config"
 	"log"
 	"net/smtp"
 	"strings"

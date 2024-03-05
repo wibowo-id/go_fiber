@@ -1,10 +1,10 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/article/repository"
-	"dlh_oss_be/app/module/article/request"
-	"dlh_oss_be/app/module/article/response"
-	"dlh_oss_be/utils/paginator"
+	"go_fiber_wibowo/app/module/article/repository"
+	"go_fiber_wibowo/app/module/article/request"
+	"go_fiber_wibowo/app/module/article/response"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 // ArticleService

@@ -1,12 +1,12 @@
 package auth
 
 import (
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/module/auth/controller"
-	"dlh_oss_be/app/module/auth/service"
-	user_repo "dlh_oss_be/app/module/user/repository"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/module/auth/controller"
+	"go_fiber_wibowo/app/module/auth/service"
+	user_repo "go_fiber_wibowo/app/module/user/repository"
 )
 
 // struct of AuthRouter

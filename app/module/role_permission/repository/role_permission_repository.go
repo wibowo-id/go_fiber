@@ -1,11 +1,11 @@
 package repository
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/role_permission/response"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/config"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/role_permission/response"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/config"
 )
 
 type rolePermissionRepository struct {

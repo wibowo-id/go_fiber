@@ -1,11 +1,11 @@
 package role
 
 import (
-	"dlh_oss_be/app/module/role/controller"
-	"dlh_oss_be/app/module/role/repository"
-	"dlh_oss_be/app/module/role/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/role/controller"
+	"go_fiber_wibowo/app/module/role/repository"
+	"go_fiber_wibowo/app/module/role/service"
 )
 
 // struct of RoleRouter

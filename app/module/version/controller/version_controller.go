@@ -1,12 +1,12 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/version/request"
-	"dlh_oss_be/app/module/version/service"
-	"dlh_oss_be/utils/paginator"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/version/request"
+	"go_fiber_wibowo/app/module/version/service"
+	"go_fiber_wibowo/utils/paginator"
+	"go_fiber_wibowo/utils/response"
 )
 
 type versionController struct {

@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/permission/service"
+import "go_fiber_wibowo/app/module/permission/service"
 
 type Controller struct {
 	Permission PermissionController

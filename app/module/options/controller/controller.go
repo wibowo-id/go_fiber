@@ -1,7 +1,7 @@
 package controller
 
-import "dlh_oss_be/app/module/options/service"
-import auth_service "dlh_oss_be/app/module/auth/service"
+import "go_fiber_wibowo/app/module/options/service"
+import auth_service "go_fiber_wibowo/app/module/auth/service"
 
 type Controller struct {
 	Option OptionController

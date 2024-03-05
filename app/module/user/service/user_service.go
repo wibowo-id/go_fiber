@@ -1,14 +1,14 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/user/repository"
-	"dlh_oss_be/app/module/user/request"
-	"dlh_oss_be/app/module/user/response"
-	globalRequest "dlh_oss_be/app/request"
-	"dlh_oss_be/utils/paginator"
 	"errors"
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/user/repository"
+	"go_fiber_wibowo/app/module/user/request"
+	"go_fiber_wibowo/app/module/user/response"
+	globalRequest "go_fiber_wibowo/app/request"
+	"go_fiber_wibowo/utils/paginator"
 	"time"
 )
 

@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"dlh_oss_be/app/module/options/response"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/config"
+	"go_fiber_wibowo/app/module/options/response"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/config"
 	"strconv"
 )
 

@@ -1,8 +1,8 @@
 package request
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/utils/paginator"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 type ArticleRequest struct {

@@ -4,12 +4,12 @@ import (
 	"errors"
 	"testing"
 
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/article/repository"
-	"dlh_oss_be/app/module/article/request"
-	"dlh_oss_be/utils/paginator"
 	gomock "github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/article/repository"
+	"go_fiber_wibowo/app/module/article/request"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 func TestNewArticleService(t *testing.T) {

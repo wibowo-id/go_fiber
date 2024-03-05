@@ -1,10 +1,10 @@
 package controller
 
 import (
-	auth_service "dlh_oss_be/app/module/auth/service"
-	"dlh_oss_be/app/module/options/service"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
+	auth_service "go_fiber_wibowo/app/module/auth/service"
+	"go_fiber_wibowo/app/module/options/service"
+	"go_fiber_wibowo/utils/response"
 )
 
 type optionController struct {

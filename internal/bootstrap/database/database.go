@@ -1,9 +1,9 @@
 package database
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/utils/config"
 	"github.com/rs/zerolog"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/utils/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"dlh_oss_be/app/middleware"
-	"dlh_oss_be/app/router"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/config"
-	"dlh_oss_be/utils/response"
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/zerolog"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/middleware"
+	"go_fiber_wibowo/app/router"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/config"
+	"go_fiber_wibowo/utils/response"
 
 	futils "github.com/gofiber/fiber/v2/utils"
 )

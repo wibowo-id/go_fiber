@@ -1,11 +1,11 @@
 package wa_sender
 
 import (
-	"dlh_oss_be/app/module/wa_sender/controller"
-	"dlh_oss_be/app/module/wa_sender/repository"
-	"dlh_oss_be/app/module/wa_sender/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/wa_sender/controller"
+	"go_fiber_wibowo/app/module/wa_sender/repository"
+	"go_fiber_wibowo/app/module/wa_sender/service"
 )
 
 // struct of WaSenderRouter

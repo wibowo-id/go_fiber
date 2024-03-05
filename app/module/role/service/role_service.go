@@ -1,13 +1,13 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/role/repository"
-	"dlh_oss_be/app/module/role/request"
-	"dlh_oss_be/app/module/role/response"
-	globalRequest "dlh_oss_be/app/request"
-	"dlh_oss_be/utils/paginator"
 	"errors"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/role/repository"
+	"go_fiber_wibowo/app/module/role/request"
+	"go_fiber_wibowo/app/module/role/response"
+	globalRequest "go_fiber_wibowo/app/request"
+	"go_fiber_wibowo/utils/paginator"
 	"time"
 )
 

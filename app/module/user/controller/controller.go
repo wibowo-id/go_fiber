@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/user/service"
+import "go_fiber_wibowo/app/module/user/service"
 
 type Controller struct {
 	User UserController

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"dlh_oss_be/app/module/options/repository"
-	"dlh_oss_be/app/module/options/response"
+	"go_fiber_wibowo/app/module/options/repository"
+	"go_fiber_wibowo/app/module/options/response"
 )
 
 // OptionService

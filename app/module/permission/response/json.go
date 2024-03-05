@@ -1,6 +1,6 @@
 package response
 
-import "dlh_oss_be/app/database/schema"
+import "go_fiber_wibowo/app/database/schema"
 
 func FromDomain(role *schema.Permission) (res *schema.Permission) {
 	if role != nil {

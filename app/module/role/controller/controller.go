@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/role/service"
+import "go_fiber_wibowo/app/module/role/service"
 
 type Controller struct {
 	Role RoleController

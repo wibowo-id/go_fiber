@@ -1,11 +1,11 @@
 package web_page
 
 import (
-	"dlh_oss_be/app/module/web_page/controller"
-	"dlh_oss_be/app/module/web_page/repository"
-	"dlh_oss_be/app/module/web_page/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/web_page/controller"
+	"go_fiber_wibowo/app/module/web_page/repository"
+	"go_fiber_wibowo/app/module/web_page/service"
 )
 
 // struct of WebPageRouter

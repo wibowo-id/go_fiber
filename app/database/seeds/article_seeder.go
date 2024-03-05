@@ -1,7 +1,7 @@
 package seeds
 
 import (
-	"dlh_oss_be/app/database/schema"
+	"go_fiber_wibowo/app/database/schema"
 	"gorm.io/gorm"
 )
 

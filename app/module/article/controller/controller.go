@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/article/service"
+import "go_fiber_wibowo/app/module/article/service"
 
 type Controller struct {
 	Article ArticleController

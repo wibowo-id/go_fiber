@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/version/service"
+import "go_fiber_wibowo/app/module/version/service"
 
 type Controller struct {
 	Version VersionController

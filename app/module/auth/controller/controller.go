@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"dlh_oss_be/app/module/auth/service"
-	role_permission_service "dlh_oss_be/app/module/role_permission/service"
-	user_repo "dlh_oss_be/app/module/user/repository"
-	wa_service "dlh_oss_be/app/module/wa_sender/service"
+	"go_fiber_wibowo/app/module/auth/service"
+	role_permission_service "go_fiber_wibowo/app/module/role_permission/service"
+	user_repo "go_fiber_wibowo/app/module/user/repository"
+	wa_service "go_fiber_wibowo/app/module/wa_sender/service"
 )
 
 type Controller struct {

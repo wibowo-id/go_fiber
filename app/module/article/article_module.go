@@ -1,11 +1,11 @@
 package article
 
 import (
-	"dlh_oss_be/app/module/article/controller"
-	"dlh_oss_be/app/module/article/repository"
-	"dlh_oss_be/app/module/article/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/article/controller"
+	"go_fiber_wibowo/app/module/article/repository"
+	"go_fiber_wibowo/app/module/article/service"
 )
 
 // struct of ArticleRouter

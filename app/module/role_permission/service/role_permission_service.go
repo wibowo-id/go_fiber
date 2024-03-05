@@ -1,11 +1,11 @@
 package service
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/role_permission/repository"
-	"dlh_oss_be/app/module/role_permission/response"
 	"errors"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/role_permission/repository"
+	"go_fiber_wibowo/app/module/role_permission/response"
 )
 
 // RolePermissionService

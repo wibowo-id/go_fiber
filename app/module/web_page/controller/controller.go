@@ -1,6 +1,6 @@
 package controller
 
-import "dlh_oss_be/app/module/web_page/service"
+import "go_fiber_wibowo/app/module/web_page/service"
 
 type Controller struct {
 	WebPage WebPageController

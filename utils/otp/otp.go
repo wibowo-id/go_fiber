@@ -1,7 +1,7 @@
 package otp
 
 import (
-	"dlh_oss_be/utils/helpers"
+	"go_fiber_wibowo/utils/helpers"
 )
 
 func GenerateOtp() string {

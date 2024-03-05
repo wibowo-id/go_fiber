@@ -1,4 +1,4 @@
-module dlh_oss_be
+module go_fiber_wibowo
 
 go 1.18
 

@@ -1,11 +1,11 @@
 package permission
 
 import (
-	"dlh_oss_be/app/module/permission/controller"
-	"dlh_oss_be/app/module/permission/repository"
-	"dlh_oss_be/app/module/permission/service"
 	"github.com/gofiber/fiber/v2"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/module/permission/controller"
+	"go_fiber_wibowo/app/module/permission/repository"
+	"go_fiber_wibowo/app/module/permission/service"
 )
 
 // struct of PermissionRouter

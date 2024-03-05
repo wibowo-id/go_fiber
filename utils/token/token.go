@@ -1,12 +1,12 @@
 package token
 
 import (
-	"dlh_oss_be/app/module/auth/response"
-	"dlh_oss_be/utils/config"
 	"fmt"
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/module/auth/response"
+	"go_fiber_wibowo/utils/config"
 	"strings"
 	"time"
 )

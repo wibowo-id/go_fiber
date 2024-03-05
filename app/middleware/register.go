@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"dlh_oss_be/utils"
-	"dlh_oss_be/utils/config"
+	"go_fiber_wibowo/utils"
+	"go_fiber_wibowo/utils/config"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"

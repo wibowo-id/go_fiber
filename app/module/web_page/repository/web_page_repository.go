@@ -1,13 +1,13 @@
 package repository
 
 import (
-	"dlh_oss_be/app/database/schema"
-	"dlh_oss_be/app/module/web_page/request"
-	paginationRequest "dlh_oss_be/app/request"
-	"dlh_oss_be/internal/bootstrap/database"
-	"dlh_oss_be/utils/config"
-	"dlh_oss_be/utils/paginator"
 	"github.com/google/uuid"
+	"go_fiber_wibowo/app/database/schema"
+	"go_fiber_wibowo/app/module/web_page/request"
+	paginationRequest "go_fiber_wibowo/app/request"
+	"go_fiber_wibowo/internal/bootstrap/database"
+	"go_fiber_wibowo/utils/config"
+	"go_fiber_wibowo/utils/paginator"
 )
 
 type webPageRepository struct {

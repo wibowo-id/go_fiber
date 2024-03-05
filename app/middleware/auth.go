@@ -4,10 +4,10 @@ import (
 	"github.com/google/uuid"
 	"time"
 
-	"dlh_oss_be/utils/config"
 	"github.com/gofiber/fiber/v2"
 	jwtware "github.com/gofiber/jwt/v2"
 	"github.com/golang-jwt/jwt/v4"
+	"go_fiber_wibowo/utils/config"
 )
 
 func Protected() fiber.Handler {
