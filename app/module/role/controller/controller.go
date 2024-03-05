@@ -6,8 +6,8 @@ type Controller struct {
 	Role RoleController
 }
 
-func NewController(badanUsahaService service.RoleService) *Controller {
+func NewController(roleService service.RoleService) *Controller {
 	return &Controller{
-		Role: NewRoleController(badanUsahaService),
+		Role: NewRoleController(roleService),
 	}
 }

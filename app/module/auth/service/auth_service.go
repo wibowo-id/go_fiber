@@ -30,7 +30,7 @@ type AuthService interface {
 	ChangePassword(req request.ChangePasswordRequest, UserId string) (res response.RegisterResponse, err error)
 	RequestOTP(req request.OtpRequest) (OtpResp response.OtpResponse, err error)
 	VerifyOTP(req request.OtpConfirmRequest) (OtpResp response.OtpResponse, err error)
-	Profile(Id string) (res *response.UserWithBadanUsaha, err error)
+	Profile(Id string) (res *schema.User, err error)
 	Logout(Id string) (res *schema.User, err error)
 	UpdateProfile(req *request.UpdateProfileRequest, Id uuid.UUID) (res response.UpdateProfileResponse, err error)
 	UpdateFirebaseToken(req request.UpdateFirebaseTokenRequest) (res response.UpdateFirebaseResponse, err error)
@@ -235,8 +235,8 @@ func (_i *authService) VerifyOTP(req request.OtpConfirmRequest) (OtpResp respons
 	return
 }
 
-func (_i *authService) Profile(Id string) (res *response.UserWithBadanUsaha, err error) {
-	res, err = _i.userRepo.FindUserByIdWithBadanUsaha(Id)
+func (_i *authService) Profile(Id string) (res *schema.User, err error) {
+	res, err = _i.userRepo.FindUserById(Id)
 	if err != nil {
 		err = errors.New("user not found")
 		return

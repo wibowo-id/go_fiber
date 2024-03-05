@@ -12,7 +12,7 @@ type optionService struct {
 
 // define interface of IOptionService
 //
-//go:generate mockgen -destination=badan_usaha_service_mock.go -package=service . OptionService
+//go:generate mockgen -destination=option_service_mock.go -package=service . OptionService
 type OptionService interface {
 	GetWilayah(kode string) (res []*response.OptionsResponse, err error)
 	GetRole() (res []*response.OptionsResponse, err error)
