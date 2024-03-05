@@ -16,7 +16,6 @@ import (
 	"go_fiber_wibowo/app/module/version"
 	versionController "go_fiber_wibowo/app/module/version/controller"
 	"go_fiber_wibowo/app/module/wa_sender"
-	"go_fiber_wibowo/app/module/web_page"
 	"go_fiber_wibowo/utils/config"
 )
 
@@ -34,7 +33,6 @@ type Router struct {
 	UserRouter           *user.UserRouter
 	VersionRouter        *version.VersionRouter
 	WaSenderRouter       *wa_sender.WaSenderRouter
-	WebPageRouter        *web_page.WebPageRouter
 
 	// controller
 	VersionController *versionController.Controller
@@ -54,7 +52,6 @@ func NewRouter(
 	userRouter *user.UserRouter,
 	versionRouter *version.VersionRouter,
 	waSenderRouter *wa_sender.WaSenderRouter,
-	webPageRouter *web_page.WebPageRouter,
 
 	// controller
 	versionController *versionController.Controller,
@@ -73,7 +70,6 @@ func NewRouter(
 		UserRouter:           userRouter,
 		VersionRouter:        versionRouter,
 		WaSenderRouter:       waSenderRouter,
-		WebPageRouter:        webPageRouter,
 
 		// controller
 		VersionController: versionController,
@@ -113,5 +109,4 @@ func (r *Router) Register() {
 	r.UserRouter.RegisterUserRoutes(api)
 	r.ArticleRouter.RegisterArticleRoutes(api)
 	r.VersionRouter.RegisterVersionRoutes(api)
-	r.WebPageRouter.RegisterWebPageRoutes(api)
 }

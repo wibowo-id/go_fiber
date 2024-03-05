@@ -1,7 +1,10 @@
 package main
 
 import (
+	fxzerolog "github.com/efectn/fx-zerolog"
+	_ "go.uber.org/automaxprocs"
 	"go.uber.org/fx"
+	"go_fiber_wibowo/app/middleware"
 	"go_fiber_wibowo/app/module/article"
 	"go_fiber_wibowo/app/module/auth"
 	"go_fiber_wibowo/app/module/options"
@@ -11,11 +14,6 @@ import (
 	"go_fiber_wibowo/app/module/user"
 	"go_fiber_wibowo/app/module/version"
 	"go_fiber_wibowo/app/module/wa_sender"
-	"go_fiber_wibowo/app/module/web_page"
-
-	fxzerolog "github.com/efectn/fx-zerolog"
-	_ "go.uber.org/automaxprocs"
-	"go_fiber_wibowo/app/middleware"
 	"go_fiber_wibowo/app/router"
 	"go_fiber_wibowo/internal/bootstrap"
 	"go_fiber_wibowo/internal/bootstrap/database"
@@ -63,7 +61,6 @@ func main() {
 		permission.NewPermissionModule,
 		user.NewUserModule,
 		role_permission.NewRolePermissionModule,
-		web_page.NewWebPageModule,
 
 		version.NewVersionModule,
 
