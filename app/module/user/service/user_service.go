@@ -19,7 +19,7 @@ type userService struct {
 
 // define interface of IUserService
 //
-//go:generate mockgen -destination=badan_usaha_service_mock.go -package=service . UserService
+//go:generate mockgen -destination=user_service_mock.go -package=service . UserService
 type UserService interface {
 	All(req globalRequest.Pagination, c *fiber.Ctx) (user []*response.UserResponse, paging paginator.Pagination, err error)
 	Show(id string) (article *response.UserResponse, err error)

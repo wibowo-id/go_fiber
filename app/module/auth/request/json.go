@@ -59,29 +59,6 @@ type PayloadSendMessage struct {
 	Message string `json:"message"`
 }
 
-type CreateBadanUsaha struct {
-	Id             uuid.UUID `json:"id"`
-	NamaBadanUsaha string    `json:"nama_badan_usaha"`
-	Nib            string    `json:"nib"`
-	Telepon        string    `json:"telepon"`
-	UserId         uuid.UUID `json:"user_id"`
-	ProvinsiId     string    `json:"propinsi_id"`
-	KotaId         string    `json:"kota_id"`
-	KecamatanId    string    `json:"kecamatan_id"`
-	KelurahanId    string    `json:"kelurahan_id"`
-	Rt             string    `json:"rt"`
-	Rw             string    `json:"rw"`
-	KodePos        string    `json:"kode_pos"`
-	AlamatLengkap  string    `json:"alamat_lengkap"`
-	IsActive       bool      `json:"is_active"`
-	CreatedAtBy
-}
-
-type UpdateBadanUsaha struct {
-	CreateBadanUsaha
-	UpdatedAtBy
-}
-
 type CreatedAtBy struct {
 	CreatedAt time.Time `json:"created_at"`
 	CreatedBy uuid.UUID `json:"created_by"`

@@ -11,8 +11,6 @@ type UserResponse struct {
 	Email       string    `json:"email"`
 	Telepon     string    `json:"telepon"`
 	Password    string    `json:"password"`
-	BidangId    uuid.UUID `json:"bidang_id"`
-	NamaBidang  string    `json:"nama_bidang"`
 	RoleId      uuid.UUID `json:"role_id"`
 	NamaRole    string    `json:"nama_role"`
 	IsActive    bool      `json:"is_active"`
@@ -28,8 +26,6 @@ func FromDomain(req *UserResponse) (res *UserResponse) {
 			Email:       req.Email,
 			Telepon:     req.Telepon,
 			Password:    req.Password,
-			BidangId:    req.BidangId,
-			NamaBidang:  req.NamaBidang,
 			RoleId:      req.RoleId,
 			NamaRole:    req.NamaRole,
 			IsActive:    req.IsActive,

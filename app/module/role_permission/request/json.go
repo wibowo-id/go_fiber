@@ -9,7 +9,6 @@ type CreateRequest struct {
 	Id           uuid.UUID `json:"id"`
 	RoleId       string    `json:"role_id"`
 	PermissionId string    `json:"permission_id"`
-	BidangId     string    `json:"bidang_id"`
 	OrderNumber  int       `json:"order_number"`
 	IsActive     bool      `json:"is_active"`
 	CreatedAt    time.Time `json:"created_at"`

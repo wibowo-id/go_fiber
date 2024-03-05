@@ -14,18 +14,18 @@ type OptionRouter struct {
 	Controller *controller.Controller
 }
 
-// register bulky of badanUsaha module
+// register bulky of options module
 var NewOptionModule = fx.Options(
-	// register repository of badanUsaha module
+	// register repository of options module
 	fx.Provide(repository.NewOptionRepository),
 
-	// register service of badanUsaha module
+	// register service of options module
 	fx.Provide(service.NewOptionService),
 
-	// register controller of badanUsaha module
+	// register controller of options module
 	fx.Provide(controller.NewController),
 
-	// register router of badanUsaha module
+	// register router of options module
 	fx.Provide(NewOptionRouter),
 )
 
@@ -37,7 +37,7 @@ func NewOptionRouter(fiber *fiber.App, controller *controller.Controller) *Optio
 	}
 }
 
-// register routes of badanUsaha module
+// register routes of options module
 func (_i *OptionRouter) RegisterOptionRoutes(prefix fiber.Router) {
 	// define controllers
 	Controller := _i.Controller.Option

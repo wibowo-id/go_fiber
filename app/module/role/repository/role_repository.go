@@ -36,9 +36,7 @@ func NewRoleRepository(db *database.Database) RoleRepository {
 func (_i *roleRepository) All(req paginationRequest.Pagination) (role []*response.Role, paging paginator.Pagination, err error) {
 	var count int64
 
-	query := _i.DB.DB.Model(&schema.Role{}).
-		Select("roles.*", "bidangs.nama_bidang").
-		Joins("join bidangs on bidangs.id=roles.bidang_id")
+	query := _i.DB.DB.Model(&schema.Role{})
 	query.Count(&count)
 
 	req.Pagination.Count = count

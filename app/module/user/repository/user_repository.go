@@ -51,7 +51,6 @@ type UserRepository interface {
 	SendMessage(phone, message string) error
 	CreateForgotPassword(req *schema.ForgotPassword) (res *schema.ForgotPassword, err error)
 	GetDashboard() (res *authResponse.Dashboard, err error)
-	FindUserByIdWithBadanUsaha(Id string) (res *authResponse.UserWithBadanUsaha, err error)
 }
 
 func NewUserRepository(db *database.Database) UserRepository {
@@ -65,8 +64,7 @@ func (_i *userRepository) All(req paginationRequest.Pagination, c *fiber.Ctx) (u
 	var count int64
 
 	query := _i.DB.DB.Model(&schema.User{}).
-		Select("users.*", "bidangs.nama_bidang", "roles.role as nama_role").
-		Joins("left join bidangs on bidangs.id=users.bidang_id").
+		Select("users.*", "roles.role as nama_role").
 		Joins("left join roles on roles.id=users.role_id")
 
 	if isClient == "true" {
@@ -217,34 +215,6 @@ func (_i *userRepository) RemoveToken(Id string) (user *schema.User, err error) 
 	}
 
 	return user, nil
-}
-
-func (_i *userRepository) FindUserByIdWithBadanUsaha(Id string) (res *authResponse.UserWithBadanUsaha, err error) {
-	qState := "SELECT * FROM users "
-	qState = qState + "WHERE id = '" + Id + "' "
-	qState = qState + "AND is_active = true "
-
-	err = _i.DB.DB.Raw(qState).Scan(&res).Error
-	if err != nil {
-		return nil, err
-	}
-
-	qState2 := "SELECT badan_usahas.*, users.nama_lengkap as user_nama, prov.nama as provinsi_nama, kota.nama as kota_nama, kec.nama as kecamatan_nama, kel.nama as kelurahan_nama FROM badan_usahas "
-	qState2 = qState2 + "JOIN users ON users.id = badan_usahas.user_id "
-	qState2 = qState2 + "JOIN wilayahs prov ON badan_usahas.provinsi_id = prov.kode "
-	qState2 = qState2 + "JOIN wilayahs kota ON badan_usahas.kota_id = kota.kode "
-	qState2 = qState2 + "JOIN wilayahs kec ON badan_usahas.kecamatan_id = kec.kode "
-	qState2 = qState2 + "JOIN wilayahs kel ON badan_usahas.kelurahan_id = kel.kode "
-	qState2 = qState2 + "WHERE badan_usahas.user_id = '" + Id + "' "
-	qState2 = qState2 + "AND badan_usahas.is_active = true "
-	qState2 = qState2 + "AND badan_usahas.deleted_at IS NULL "
-
-	err = _i.DB.DB.Raw(qState2).Scan(&res.BadanUsaha).Error
-	if err != nil {
-		return nil, err
-	}
-
-	return res, nil
 }
 
 func (_i *userRepository) CreateForgotPassword(req *schema.ForgotPassword) (res *schema.ForgotPassword, err error) {
