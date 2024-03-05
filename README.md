@@ -1,36 +1,37 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="DLH_OSS" />
+  <img src="./.github/app.gif" alt="wiowo.id" />
 
 &#xa0;
 
-<a href="https://dlh_oss.wibowo.id">Demo</a>
+<a href="https://wibowo.id">Demo</a>
 </div>
 
-<h1 align="center">DLH OSS Backend</h1>
+<h1 align="center">Go Fiber</h1>
+<h3 align="center">Boiler template for API</h3>
 
 <!-- for public repository -->
 <!--
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/ossdlh/oss_backend?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wibowo-id/go_fiber?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/ossdlh/oss_backend?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wibowo-id/go_fiber?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/ossdlh/oss_backend?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wibowo-id/go_fiber?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/ossdlh/oss_backend?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/wibowo-id/go_fiber?color=56BEB8">
 
-  <img alt="Github issues" src="https://img.shields.io/github/issues/ossdlh/oss_backend?color=56BEB8" />
+  <img alt="Github issues" src="https://img.shields.io/github/issues/wibowo-id/go_fiber?color=56BEB8" />
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/ossdlh/oss_backend?color=56BEB8" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/wibowo-id/go_fiber?color=56BEB8" />
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/ossdlh/oss_backend?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/wibowo-id/go_fiber?color=56BEB8" />
 </p>
 -->
 
 <!-- Status -->
 
 <!-- <h4 align="center">
-	🚧  DLH OSS Backend 🚀 Under construction...  🚧
+	🚧  GO Fiber 🚀 Under construction...  🚧
 </h4>
 
 <hr> -->
@@ -42,7 +43,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/ossdlh" target="_blank">Author</a>
+  <a href="https://github.com/wibowo-id" target="_blank">Author</a>
 </p>
 
 <br>
@@ -86,10 +87,10 @@ and [MySQL](https://www.mysql.org) installed.
 
 ```bash
 # Clone this project
-$ git clone git@github.com:ossdlh/oss_backend.git
+$ git clone git@github.com:wibowo-id/go_fiber.git
 
 # Access
-$ cd oss_backend
+$ cd go_fiber
 
 # Download dependencies
 $ go get -v ./...
@@ -104,7 +105,7 @@ $ go run cmd/main.go
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
-Made with :heart: by <a href="https://github.com/ossdlh" target="_blank">DLH OSS Tech Team</a>
+Made with :heart: by <a href="https://github.com/wibowo-id" target="_blank">wibowo.id</a>
 
 &#xa0;
 
