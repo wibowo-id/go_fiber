@@ -1,0 +1,66 @@
+# Configuration vars for cmd/app
+[app]
+name = "DLH_OSS"
+port = ":8080"
+idle-timeout = 5 # As seconds
+print-routes = false
+prefork = true
+production = false
+secret = "10Zxb!:f%Z+S}E/'=g5*/Hp$cm|=gCF$Q&1?`p~3J>VDaF7Ck#O&H*[}LzD/LyQ"
+
+[app.wa]
+api-key = "lsAQX7lpjC0mIPBYbheNPNlxJpOKR3"
+phone = "6285320187192"
+url-text = "http://localhost:8000/send-message"
+
+[app.tls]
+enable = false
+cert-file = "./storage/selfsigned.crt"
+key-file = "./storage/selfsigned.key"
+
+[db]
+migration = true
+seeder = false
+
+[db.mysql]
+dsn = "root:asdf1234@tcp(127.0.0.1:3306)/dlh_oss?charset=utf8mb4&parseTime=True&loc=Local"
+
+
+[firebase]
+path = "/home/chandra/DLH/backend/dlh-oss-firebase-adminsdk-88g2e-3f46c91531.json"
+project-id = "dlh_oss"
+
+[logger]
+time-format = "" # https://pkg.go.dev/time#pkg-constants, https://github.com/rs/zerolog/blob/master/api.go#L10 
+level = 1 # panic -> 5, fatal -> 4, error -> 3, warn -> 2, info -> 1, debug -> 0, trace -> -1
+prettier = true
+
+[middleware.compress]
+enable = true
+level = 1
+
+[middleware.recover]
+enable = true
+
+[middleware.monitor]
+enable = false
+path = "/monitor"
+
+[middleware.pprof]
+enable = true
+
+[middleware.limiter]
+enable = false
+max = 20
+expiration_seconds = 60
+
+[middleware.jwt]
+secret = "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcwNTc3MDcwNCwiaWF0IjoxNzA1NzcwNzA0fQ.yvDkPFljMKvUbf7Rg_bhR2cU15o7TQBfC9bNc6K7b00"
+expiration_seconds = 3600
+
+[middleware.filesystem]
+enable = false
+browse = true
+max_age = 3600
+index = "index.html"
+root = "./storage/public"
