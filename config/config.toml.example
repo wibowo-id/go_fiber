@@ -12,8 +12,8 @@ secret = "10Zvb!:f%Z+S}E/'=g5*/Hp$cm|=gCF$Q&1?`p~3J>VDaF7Ck#O&H*[}LzD/LyQ"
 id-encryption-key = "your-32-byte-id-encryption-key-here!!"
 
 [app.wa]
-api-key = "lsAQX7lpjC0mIPBYbheNPNlxJpOKR3"
-phone = "6285320187192"
+api-key = "your-api-key"
+phone = "621234567890"
 url-text = "https://wa.wibowo.id"
 
 [app.tls]
