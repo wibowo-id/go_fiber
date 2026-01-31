@@ -8,7 +8,7 @@ prefork = true
 production = false
 secret = "10Zvb!:f%Z+S}E/'=g5*/Hp$cm|=gCF$Q&1?`p~3J>VDaF7Ck#O&H*[}LzD/LyQ"
 
-# 32-byte key for ID encryption (UUID in response/request). Use base64 or long string; hashed to 32 bytes if needed.
+# 32-byte key for ID encryption (UUID in response/request). Use base64 or long string; hashed to 32 bytes if needed
 id-encryption-key = "your-32-byte-id-encryption-key-here!!"
 
 [app.wa]
