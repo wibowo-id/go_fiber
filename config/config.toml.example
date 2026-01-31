@@ -8,12 +8,12 @@ prefork = true
 production = false
 secret = "10Zvb!:f%Z+S}E/'=g5*/Hp$cm|=gCF$Q&1?`p~3J>VDaF7Ck#O&H*[}LzD/LyQ"
 
-# 32-byte key for ID encryption (UUID in response/request). Use base64 or long string; hashed to 32 bytes if needed.
+# 32-byte key for ID encryption (UUID in response/request). Use base64 or long string; hashed to 32 bytes if needed
 id-encryption-key = "your-32-byte-id-encryption-key-here!!"
 
 [app.wa]
-api-key = "lsAQX7lpjC0mIPBYbheNPNlxJpOKR3"
-phone = "6285320187192"
+api-key = "your-api-key"
+phone = "621234567890"
 url-text = "https://wa.wibowo.id"
 
 [app.tls]
@@ -28,7 +28,7 @@ seeder = false
 [db.mysql]
 dsn = "root:asdf1234@tcp(127.0.0.1:3306)/go_fiber_wibowo?charset=utf8mb4&parseTime=True&loc=Local"
 
-[firebase]
+[firebase] 
 path = "~/go-fiber-firebase-adminsdk-88g2e-3f46c91531.json"
 project-id = "go_fiber_wibowo"
 
