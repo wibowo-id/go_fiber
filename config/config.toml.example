@@ -1,0 +1,74 @@
+# Configuration vars for cmd/app
+[app]
+name = "GO Fiber [Localhost]"
+port = ":8080"
+idle-timeout = 5 # As seconds
+print-routes = false
+prefork = true
+production = false
+secret = "10Zvb!:f%Z+S}E/'=g5*/Hp$cm|=gCF$Q&1?`p~3J>VDaF7Ck#O&H*[}LzD/LyQ"
+# 32-byte key for ID encryption (UUID in response/request). Use base64 or long string; hashed to 32 bytes if needed.
+id-encryption-key = "your-32-byte-id-encryption-key-here!!"
+
+[app.wa]
+api-key = "lsAQX7lpjC0mIPBYbheNPNlxJpOKR3"
+phone = "6285320187192"
+url-text = "https://wa.wibowo.id"
+
+[app.tls]
+enable = false
+cert-file = "./storage/selfsigned.crt"
+key-file = "./storage/selfsigned.key"
+
+[db]
+migration = false
+seeder = false
+
+[db.mysql]
+dsn = "root:asdf1234@tcp(127.0.0.1:3306)/go_fiber_wibowo?charset=utf8mb4&parseTime=True&loc=Local"
+
+[firebase]
+path = "~/go-fiber-firebase-adminsdk-88g2e-3f46c91531.json"
+project-id = "go_fiber_wibowo"
+
+[logger]
+time-format = "" # https://pkg.go.dev/time#pkg-constants, https://github.com/rs/zerolog/blob/master/api.go#L10
+level = 0 # panic -> 5, fatal -> 4, error -> 3, warn -> 2, info -> 1, debug -> 0, trace -> -1
+prettier = true
+
+[middleware.compress]
+enable = true
+level = 1
+
+[middleware.recover]
+enable = true
+
+[middleware.monitor]
+enable = false
+path = "/monitor"
+
+[middleware.pprof]
+enable = true
+
+[middleware.limiter]
+enable = false
+max = 20
+expiration_seconds = 60
+
+[middleware.jwt]
+secret = "eyJhbGciOiJIUzI1NiJ9.ryJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcwNTc3MDcwNCwiaWF0IjoxNzA1NzcwNzA0fQ.yvDkPFljMKvUbf7Rg_bhR2cU15o7TQBfC9bNc6K7b00"
+expiration_seconds = 43200
+
+[middleware.filesystem]
+enable = false
+browse = true
+max_age = 3600
+index = "index.html"
+root = "./storage/public"
+
+[mail]
+smptp_host = "smtp.gmail.com"
+smtp_port = 587
+sender_name = "Chandra Wibowo <chandra0@wibowo.id>"
+auth_email = "chandra0@wibowo.id"
+auth_password = "PcTcNEisdn"
