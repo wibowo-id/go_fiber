@@ -28,7 +28,7 @@ seeder = false
 [db.mysql]
 dsn = "root:asdf1234@tcp(127.0.0.1:3306)/go_fiber_wibowo?charset=utf8mb4&parseTime=True&loc=Local"
 
-[firebase] 
+[firebase]
 path = "~/go-fiber-firebase-adminsdk-88g2e-3f46c91531.json"
 project-id = "go_fiber_wibowo"
 
